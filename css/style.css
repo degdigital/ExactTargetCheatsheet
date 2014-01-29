@@ -1,0 +1,103 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+::-moz-selection { background: #6a8ebf; color: #fff; text-shadow: none; }
+::selection { background: #6a8ebf; color: #fff; text-shadow: none; }
+td { vertical-align: top; }
+
+
+/* ==|== primary styles ========= Author: Brian Graves ========= */
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; font-family: helvetica,arial,sans-serif; font-size: 0.8em; line-height: 1.231; color: #46473B; }
+
+header { text-align: center; padding: 5px 0; margin: 20px 0 25px 0; border-top: 1px dotted #6A8EBF; border-bottom: 1px dotted #6A8EBF; }
+
+h1,h2,h3,h4 { margin: 0; padding: 0; }
+h1,h2 { color: #6A8EBF; }
+h1 { font-size: 5.8em; }
+h2 { font-size: 3.1em; padding: 20px 0; }
+h3 { font-size: 2em; }
+.container  
+{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto; 
+}
+.column
+{
+    width: 32%;
+    float: left;
+    margin: 0 0 0 2%;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.column:first-child { margin: 0; }
+.column > p { margin: 3px 0 6px 0; font-size: 1em; font-weight: bold; color: #6A8EBF; }
+.column table  
+{
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 4px 4px 8px 0 rgba(32, 32, 32, 0.2);
+	-webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 8px;
+}
+.column table tr th 
+{ 
+    width: 100%;
+    padding: 8px 15px;
+    font-size: 14px; 
+    color: #f3f6fa;
+    text-align: left;
+    background: #6a8ebf; 
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+    border-radius: 6px 6px 0 0;
+}
+.column table tr td { padding: 6px 15px; }
+.column table tr:last-child td:first-child { border-radius: 0 0 0 6px; }
+.column table tr:last-child td:last-child { border-radius: 0 0 6px 0; }
+.column table tr:nth-child(even) { background: #f3f6fa; }
+
+
+/* Contain floats */ 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+@media only screen and (max-width: 1090px) {
+  h1 { font-size: 54px; }
+  h2 { font-size: 28px; }
+
+}
+@media only screen and (max-width: 768px) {
+  h1 { font-size: 40px; }
+  h2 { font-size: 20px; }
+.column p { min-height: 0; }
+	.column, .column:first-child { width: 95%; float: none; margin: 0 auto; }
+	.column { margin-top: 30px; }
+	.column:first-child { margin-top: 0; }
+}
+@media only screen and (max-width: 480px) {
+	header { width: 95%; margin: 10px auto 20px auto; text-align: center; }
+	h1 { font-size: 24px; }
+	h2 { font-size: 24px; }
+}
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}

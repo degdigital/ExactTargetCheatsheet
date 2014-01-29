@@ -1,0 +1,431 @@
+﻿<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <title>Exact Target HTML Email Cheatsheet</title>
+  <meta name="description" content="An HTML, CSS, & Ampscript Cheatsheet Created by Brian Graves">
+  <meta name="author" content="Brian Graves">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+        <h2>Exact Target HTML, CSS, & Ampscript Cheatsheet</h2>
+    </header>
+    <div class="main" role="main">
+        <div class="column html">
+        	<h3>HTML</h3>
+        	<p>syntax: &lt;tag attribute="value"&gt;...&lt;/tag&gt;</p>
+        	<table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th colspan="2">Tags</th>
+                </tr>
+                <tr>
+                	<td>&lt;a href="#"&gt;...&lt;/a&gt;</td>
+                	<td>Link</td>
+                </tr>
+                <tr>
+                	<td>&lt;img src="#" /&gt;</td>
+                	<td>Image</td>
+                </tr>
+                <tr>
+                	<td>&lt;span&gt;...&lt;/span&gt;</td>
+                    <td>Used to style a<br /> group of text inline</td>
+                </tr>
+                <tr>
+                	<td>&lt;table&gt;...&lt;/table&gt;</td>
+                    <td>Table</td>
+                </tr>
+                <tr>
+                	<td>&lt;tr&gt;...&lt;/tr&gt;</td>
+                    <td>Table Row</td>
+                </tr>
+                <tr>
+                	<td>&lt;td&gt;...&lt;/td&gt;</td>
+                    <td>Table Cell</td>
+                </tr>
+                <tr>
+                    <td>&lt;strong&gt;...&lt;/strong&gt;</td>
+                    <td>Defines Strong Text</td>
+            	</tr>
+            </table>  
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th colspan="2">Attributes</th>
+                </tr>
+                <tr>
+                	<td>style="..."</td>
+                    <td>Specifies an inline style</td>
+                </tr>
+                <tr>
+                    <td>align="..."</td>
+                    <td>Horizontal alignment of cell<br />Possible values: left, right, center</td>
+            	</tr>
+            	<tr>
+                    <td>valign="..."</td>
+                    <td>Vertical alignment of cell<br />Possible values: top, middle, bottom</td>
+            	</tr>
+            	<tr>
+                    <td>alt="..."</td>
+                    <td>Specifies Alternate Text for an Image</td>
+            	</tr>
+            	<tr>
+                    <td>alias="..."</td>
+                    <td>Specifies Exact Target Tracking Term</td>
+            	</tr>
+            	<tr>
+                    <td>cellpadding="0"</td>
+                    <td>Spacing within cells</td>
+            	</tr>
+            	<tr>
+                    <td>cellspacing="0"</td>
+                    <td>Spacing between cells</td>
+            	</tr>
+            	<tr>
+                    <td>class="..."</td>
+                    <td>Specifies a classname</td>
+            	</tr>
+            </table>  
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th colspan="2">Unusable Tags <span style="font-size: 10px;">(cause rendering issues)</span></th>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;...&lt;/p&gt;</td>
+                    <td></td>
+            	</tr>
+            	<tr>
+                    <td>&lt;ul&gt;...&lt;/ul&gt;</td>
+                    <td></td>
+            	</tr>
+            </table> 
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th colspan="2">Unusable Attributes <span style="font-size: 10px;">(cause rendering issues)</span></th>
+                </tr>
+                <tr>
+                	<td>colspan</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>rowspan</td>
+                    <td></td>
+            	</tr>
+            </table>  
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th colspan="2">Deprecated Tags <span style="font-size: 10px;">(should be phased out)</span></th>
+                </tr>
+                <tr>
+                	<td>&lt;font&gt;</td>
+                    <td>Fonts should be declared with CSS on the cell or span level</td>
+                </tr>
+                <tr>
+                    <td>&lt;b&gt;</td>
+                    <td>Bold text should be declared using the font-weight: bold; CSS property or using the &lt;strong&gt; tag</td>
+            	</tr>
+                <tr>
+                    <td>&lt;i&gt;</td>
+                    <td>Italic text should be declared using the font-style: italic; CSS property</td>
+                </tr>
+                <tr>
+                    <td>&lt;center&gt;</td>
+                    <td>Text should be centered using the text-align CSS property or using the align HTML attribute</td>
+                </tr>
+                <tr>
+                	<td>&lt;u&gt;</td>
+                    <td>Underlined text should be styled using the text-decoration: underline; CSS property</td>
+                </tr>
+                <tr>
+                    <td>&lt;strike&gt;</td>
+                    <td>Striked text should be styled using the text-decoration: line-through; CSS property</td>
+                </tr>
+            </table>
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th colspan="2">Depricated Attributes <span style="font-size: 10px;">(should be phased out)</span></th>
+                </tr>
+                <tr>
+                	<td>bgcolor="..."</td>
+                    <td>Specify background color using the background or background-color CSS properties</td>
+                </tr>
+                <tr>
+                	<td>size=""</td>
+                    <td>Font size should be declared using the font-size CSS property</td>
+                </tr>
+            </table>  
+        </div>
+        <div class="column css">
+        	<h3>CSS</h3>
+        	<p>syntax: &lt;tag style="property: value;"&gt;</p>
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th colspan="2">Color &amp; Background</th>
+                </tr>
+                <tr>
+                	<td>color:</td>
+                    <td>#fff;</td>
+                </tr>
+                <tr>
+                    <td>background:</td>
+                    <td>#00ff00;</td>
+            	</tr>
+                <tr>
+                    <td>background-color:</td>
+                    <td>#00ff00;</td>
+                </tr>
+                <tr>
+                	<td>background-image</td>
+                    <td>CANNOT be used</td>
+                </tr>
+            </table> 
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th colspan="2">Fonts</th>
+                </tr>
+                <tr>
+                	<td>font-family:</td>
+                    <td>arial,helvetica,sans-serif;<br />georgia,serif;</td>
+                </tr>
+                <tr>
+                    <td>font-size:</td>
+                    <td>12px;</td>
+            	</tr>
+                <tr>
+                    <td>font-weight:</td>
+                    <td>normal;<br /> bold;</td>
+                </tr>
+                <tr>
+                    <td>font-style:</td>
+                    <td>normal;<br /> italic;</td>
+                </tr>
+                <tr>
+                	<td>font:</td>
+                    <td>CAN'T declare in shorthand</td>
+                </tr>
+            </table> 
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th colspan="2">Text</th>
+                </tr>
+                <tr>
+                	<td>color:</td>
+                    <td>#040400;</td>
+                </tr>
+                <tr>
+                    <td>text-decoration:</td>
+                    <td>
+                    	none;<br />
+                    	underline;<br />
+                    	overline;<br />
+                    	line-through;
+                    </td>
+            	</tr>
+                <tr>
+                    <td>text-transform:</td>
+                    <td>
+                    	none;<br />
+                    	uppercase;<br />
+                    	lowercase;<br />
+                    	capitalize;
+                    </td>
+                </tr>
+                <tr>
+                	<td>line-height:</td>
+                    <td>20px;</td>
+                </tr>
+                <tr>
+                    <td>letter-spacing:</td>
+                    <td>0.1px;</td>
+                </tr>
+                <tr>
+                    <td>text-align:</td>
+                    <td>
+                    	left;<br />
+                    	right;<br />
+                    	center;
+                    </td>
+                </tr>
+            </table> 
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th colspan="2">Borders</th>
+                </tr>
+                <tr>
+                	<td>border-top:</td>
+                    <td>1px solid #040400;</td>
+                </tr>
+                <tr>
+                    <td>border-right:</td>
+                    <td>1px solid #040400;</td>
+            	</tr>
+                <tr>
+                    <td>border-bottom:</td>
+                    <td>1px solid #040400;</td>
+                </tr>
+                <tr>
+                	<td>border-left:</td>
+                    <td>1px solid #040400;</td>
+                </tr>
+            </table> 
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th colspan="2">Size Units</th>
+                </tr>
+                <tr>
+                	<td>0</td>
+                    <td>0 requires no unit</td>
+                </tr>
+                <tr>
+                    <td>em</td>
+                    <td>1em equal to font size of parent (same as 100%)</td>
+            	</tr>
+                <tr>
+                    <td>%</td>
+                    <td>Percentage</td>
+                </tr>
+                <tr>
+                	<td>px</td>
+                    <td>Pixels</td>
+                </tr>
+                <tr>
+                    <td>pt</td>
+                    <td>1pt = 1/72in</td>
+                </tr>
+            </table> 
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th colspan="2">Declaring Colors</th>
+                </tr>
+                <tr>
+                	<td>#789abc</td>
+                    <td>RGB Hex Notation</td>
+                </tr>
+                <tr>
+                    <td>#acf</td>
+                    <td>Equates to "#aaccff"</td>
+            	</tr>
+                <tr>
+                    <td>rgb(0,25,50)</td>
+                    <td>CAN'T be declared in rgb</td>
+                </tr>
+            </table> 
+        </div>
+        <div class="column ampscript">
+        	<h3>Personalization Strings</h3>
+        	<p>Common ampscript personalization strings</p>
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th colspan="2">Standard Links</th>
+                </tr>
+                <tr>
+                    <td>%%view_email_url%%</td>
+                    <td>View as Webpage</td>
+                </tr>
+                <tr>
+                    <td>%%ftaf_url%%</td>
+                    <td>Forward to a Friend</td>
+                </tr>
+                <tr>
+                	<td>%%subscription_center_url%%</td>
+                	<td>Subscription Center</td>
+                </tr>
+                <tr>
+                	<td>%%profile_center_url%%</td>
+                    <td>Profile Center</td>
+                </tr>
+                <tr>
+                    <td>%%unsub_center_url%%</td>
+                    <td>Unsubscribe</td>
+                </tr>
+            </table> 
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th colspan="2">Subscriber Data</th>
+                </tr>
+                <tr>
+                    <td>%%emailaddr%%</td>
+                    <td>Subscriber's Email Address</td>
+                </tr>
+                <tr>
+                    <td>%%First Name%%</td>
+                    <td>Subscriber's First Name</td>
+                </tr>
+                <tr>
+                	<td>%%Last Name%%</td>
+                	<td>Subscriber's Last Name</td>
+                </tr>
+            </table> 
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th colspan="2">Sender Data</th>
+                </tr>
+                <tr>
+                    <td>%%replyemailaddress%%</td>
+                    <td>Email Address</td>
+                </tr>
+                <tr>
+                    <td>%%member_busname%%</td>
+                    <td>Business Name</td>
+                </tr>
+                <tr>
+                	<td>%%member_addr%%</td>
+                	<td>Street Address</td>
+                </tr>
+                <tr>
+                	<td>%%member_city%%</td>
+                    <td>City</td>
+                </tr>
+                <tr>
+                    <td>%%member_state%%</td>
+                    <td>State</td>
+                </tr>
+                <tr>
+                    <td>%%member_postalcode%%</td>
+                    <td>Zip Code</td>
+                </tr>
+                <tr>
+                    <td>%%member_country%%</td>
+                    <td>Country</td>
+                </tr>
+            </table> 
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th colspan="2">Dates</th>
+                </tr>
+                <tr>
+                    <td>%%xtyear%%</td>
+                    <td>Current Year</td>
+                </tr>
+                <tr>
+                    <td>%%xtmonth%%</td>
+                    <td>Current Month</td>
+                </tr>
+                <tr>
+                    <td>%%xtday%%</td>
+                    <td>Current Day</td>
+                </tr>
+                <tr>
+                    <td>%%xtshortdate%%</td>
+                    <td>Current Date Short Form<br />(12/13/2012)</td>
+                </tr>
+                <tr>
+                    <td>%%xtlongdate%%</td>
+                    <td>Current Date Long Form<br />(Thursday, December 13, 2012)</td>
+                </tr>
+            </table> 
+        </div>
+    </div>
+  </div> 
+  
+</body>
+</html>
